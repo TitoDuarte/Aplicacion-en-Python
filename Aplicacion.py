@@ -40,4 +40,11 @@ class Desk:
         Label(frame, text = 'Año: ').grid(row = 5, column = 0)
         self.var5 = Entry(frame)
         self.var5.grid(row = 5, columnspan = 6)
-        
+           
+        Button(frame, text = 'funcion1', command = self.funcion1).grid(row = 6, column = 0 , sticky = W + E)
+        Button(frame, text = 'funcion2', command = self.funcion2).grid(row = 6, column = 1 , sticky = W + E)
+        Button(frame, text = 'funcion3', command = self.funcion3).grid(row = 6, column = 2 , sticky = W + E)
+        Button(frame, text = 'funcion4', command = self.funcion4).grid(row = 6, column = 3 , sticky = W + E)
+        Button(frame, text = 'funcion5', command = self.funcion5).grid(row = 6, column = 4 , sticky = W + E)
+ 
+
