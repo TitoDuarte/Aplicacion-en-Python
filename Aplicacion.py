@@ -5,18 +5,18 @@ import datetime
 class Desk:
     def __init__(self, window):
       
-        Ancho = 500
-        Alto = 250
-         self.wind = window
+        ancho = 500
+        alto = 250
+        self.wind = window
 
         
         self.wind.geometry(str(ancho)+'x'+str(alto))
 
         self.wind.columnconfigure(0, weight=1)
-        self.wind.title('Examen Final')
+        self.wind.title('Examen Final Aplicacion en Python')
         
 
-        frame = LabelFrame(self.wind, text = 'Bienvenido')
+        frame = LabelFrame(self.wind, text = 'Bienvenido a la Aplicacion')
         frame.grid(row = 0, column = 0, columnspan = 5, pady = 20)      
         
         Label(frame, text = 'Nombre: ').grid(row = 1, column = 0)
@@ -47,7 +47,7 @@ class Desk:
         Button(frame, text = 'funcion4', command = self.funcion4).grid(row = 6, column = 3 , sticky = W + E)
         Button(frame, text = 'funcion5', command = self.funcion5).grid(row = 6, column = 4 , sticky = W + E)
  
- self.message = Label(text = '', fg = 'red')
+        self.message = Label(text = '', fg = 'red')
         self.message.grid(row = 3, column = 0, columnspan = 2, sticky = W + E)
 
     
