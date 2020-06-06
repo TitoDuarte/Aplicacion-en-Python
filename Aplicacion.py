@@ -115,4 +115,12 @@ class Desk:
             cadena_invertida1 = letra1 + cadena_invertida1
         self.message['text'] = '{} {} o al revez {} {}'.format(nombre,apellido,cadena_invertida,cadena_invertida1)
 
+if __name__ == '__main__':
+    
+    window = Tk()
+    
+   
+    app = Desk(window)
 
+    
+    window.mainloop()
